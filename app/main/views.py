@@ -1,7 +1,7 @@
 
 from token import COMMENT
 from flask import render_template, request, redirect, url_for, abort
-from platformdirs import site_data_dir, user_data_dir
+# from platformdirs import site_data_dir, user_data_dir
 from . import main
 from ..models import User,Pitch,Comment,Category, Votes
 from .. import db
@@ -13,7 +13,7 @@ from app import login_manager
 @login_manager.user_loader
 def load_user(user_id):
     '''
-    @login_manager.user_loader Passes in a user_id to this function
+    @login_managerewbguifbw.user_loader Passes in a user_id to this function
     Function queries the database and gets a user's id as a response
     '''
     return User.query.get(user_id)
@@ -164,8 +164,8 @@ def vote_count(id):
     '''
     View function to return the total vote count per pitch
     '''
-    votes = Votes.query.filter_by(user_id=user_data_dir, line_id=site_data_dir)
+    # votes = Votes.query.filter_by(user_id=user_data_dir, line_id=site_data_dir)
 
-    total_votes = votes.count()
+    # total_votes = votes.count()
 
-    return 
+    return
