@@ -107,7 +107,7 @@ class Category(db.Model):
     def save_category(self):
         db.session.add(self)
         db.session.commit()
-        
+        # COMMENT TRIAL...
     @classmethod
     def get_categories(cls):
         categories = Category.query.all()

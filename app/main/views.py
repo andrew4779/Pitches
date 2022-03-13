@@ -24,11 +24,13 @@ def index():
     '''
     View root page function that returns index page
     '''
-
-    category = Category.get_categories()
+# COMMENT TRIAL...
+    # category = Category.get_categories()
 
     title = 'Home- Welcome'
-    return render_template('index.html', title = title,categories=category)
+    return render_template('index.html')
+    # COMMENT TRIAL...
+    #  title = title,categories=category)
 
   
 

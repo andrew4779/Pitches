@@ -56,7 +56,7 @@ def login():
     return render_template('auth/login.html',login_form=login_form,title=title)
 
 
-#logout function
+# logout function
 @auth.route('/logout') #authenticated route logout that calls the flask_login's logout_userfunction
 @login_required 
 def logout(): 
