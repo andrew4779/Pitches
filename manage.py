@@ -7,6 +7,7 @@ from flask_migrate import Migrate, MigrateCommand #initialize the migrate class
 app = create_app('development')
 # app = create_app('development')
 
+
 #Manager Commands
 manager = Manager(app)
 migrate = Migrate(app,db)
