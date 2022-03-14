@@ -31,4 +31,4 @@ python3 manage.py server
 andrewkimani02@gmail.com
 ### License
 This is under the [MIT](LICENSE) license
-Copyright (c) 2022 ** Andrew kimani **
+Copyright (c) 2022  Andrew kimani 
